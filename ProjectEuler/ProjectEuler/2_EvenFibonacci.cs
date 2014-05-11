@@ -13,14 +13,14 @@ namespace ProjectEuler
 //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
     class EvenFibonacci
     {
-        static void Main(string[] args)
+        public static void RunSolution()
         {
             int sum = 0;
             foreach (var number in fibonacci(4000000))
             {
-                if (number%2 == 0)
+                if (number % 2 == 0)
                 {
-                    Console.WriteLine(number);
+                    //Console.WriteLine(number);
                     sum += number;
                 }
             }

@@ -11,20 +11,21 @@ namespace ProjectEuler
 
 //Find the sum of all the multiples of 3 or 5 below 1000.
 
-    class MultiplesOf3Or5
+    class MultiplesOf3or5
     {
-        //Uncomment to run
-        //static void Main(string[] args)
-        //{
-        //    int sum = 0;
-            
-        //    foreach (var number in getNumbers(1000))
-        //    {
-        //        sum += number;
-        //    }
 
-        //    Console.WriteLine("sum: {0}", sum);
-        //}
+        public static void RunSolution()
+        {
+            int sum = 0;
+
+            foreach (var number in getNumbers(1000))
+            {
+                sum += number;
+            }
+
+            Console.WriteLine("sum: {0}", sum);
+
+        }
 
         public static IEnumerable<int> getNumbers(int upperLimit)
         {
