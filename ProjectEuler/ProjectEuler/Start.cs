@@ -24,7 +24,7 @@ namespace ProjectEuler
             //LargestPalindromeProduct.RunSolution();
 
             //5
-            //TODO: not done yet
+            SmallestMultiple.RunSolution();
 
             //7
             //TenThousandFirstPrime.RunSolution();

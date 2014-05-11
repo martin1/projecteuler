@@ -66,7 +66,7 @@ namespace ProjectEuler
             }
             Console.WriteLine("MaxPalindrome: {0}", maxPalindrome);
         }
-        public static string reverseString(string s)
+        private static string reverseString(string s)
         {
             char[] charArray = s.ToCharArray();
             Array.Reverse(charArray);

@@ -6,42 +6,61 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class _5_SmallestMultiple
+    class SmallestMultiple
     {
-        //TODO: not done yet
+       
+    //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+    //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
 
         public static void RunSolution()
         {
-            //TODO: not done yet
 
-            int smallestMultiple = 2;
-            //first, multiply all primes from 1 to 20
-            foreach (var prime in Primes(20))
+            int num = 1;
+            //multiply all primes 2..20 and go from there
+            foreach (var prime in Utils.Primes(20))
             {
-                Console.WriteLine(prime);
-                smallestMultiple *= prime;
+                num *= prime;
             }
-            Console.WriteLine(smallestMultiple);
+            //num = 4849845
+            IsNumDividedByAll(num);
+            //Num is not evenly dividable by 2,4,6,8,9,10,12,14,16,18,20
+            //fine tuning...
+            num *= 4;
+            num *= 3;
+            num *= 4;
 
-            //we got 9699690
-            //check which numbers do not divide the result evenly
-            var ints = Enumerable.Range(1, 20);
-            foreach (var val in ints)
+        }
+  
+        /// <summary>
+        /// Prints out numbers from 2..20 which do not evenly divide the number to be checked
+        /// </summary>
+        /// <param name="numberToBeChecked">Number that is checked for even divisibility by numbers 2..20</param>
+        /// <returns>True if given number is evenly divisible by all numbers from 2..20, false otherwise</returns>
+        public static bool IsNumDividedByAll(int numberToBeChecked)
+        {
+            var nums = Enumerable.Range(2, 19);
+            List<int> notDivided = new List<int>();
+            Console.WriteLine("Checking {0}...", numberToBeChecked);
+            foreach (var num in nums)
             {
-                if (smallestMultiple % val != 0)
+                if (numberToBeChecked % num != 0)
                 {
-                    Console.WriteLine(val);
+                    notDivided.Add(num);
                 }
             }
-        }
 
-
-        static IEnumerable<int> Primes(int max)
-        {
-            var ints = Enumerable.Range(2, Int32.MaxValue - 1).Where(x => x % 2 != 0 && x < max);
-            return ints.Where(x => !ints
-                                    .TakeWhile(y => y < x)
-                                    .Any(y => x % y == 0));
+            if (notDivided.Count > 0)
+            {
+                Console.WriteLine("Number not evenly dividable by:");
+                foreach (var item in notDivided)
+                {
+                    Console.WriteLine(item);
+                }
+                return false;
+            }
+            return true;
         }
     }
 }
