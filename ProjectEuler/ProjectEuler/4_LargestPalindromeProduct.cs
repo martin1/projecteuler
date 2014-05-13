@@ -39,23 +39,15 @@ namespace ProjectEuler
                     {
                         beginning = numString.Substring(0, (numString.Length) / 2);
                         end = numString.Substring((numString.Length) / 2);
-                        if (beginning.Equals(reverseString(end)))
-                        {
-                            // Console.WriteLine(product);
-                        }
-                        //Console.WriteLine("product: {0} beginning: {1} end: {2}", product, beginning, end);
                     }
                     else // numString.Length % 2 == 1
                     {
                         beginning = numString.Substring(0, (int)(numString.Length / 2));
                         end = numString.Substring((int)numString.Length / 2 + 1);
-                        //Console.WriteLine("product: {0} beginning: {1} end: {2}", product, beginning, end);
                     }
 
                     if (beginning.Equals(reverseString(end)))
                     {
-                        //Console.WriteLine(product);
-                        Console.WriteLine("product: {0} beginning: {1} end: {2}", product, beginning, end);
                         if (product > maxPalindrome)
                         {
                             maxPalindrome = product;

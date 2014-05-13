@@ -19,7 +19,7 @@ namespace ProjectEuler
 
             int num = 1;
             //multiply all primes 2..20 and go from there
-            foreach (var prime in Utils.Primes(20))
+            foreach (var prime in Utils.getNextPrime(20))
             {
                 num *= prime;
             }
@@ -30,6 +30,8 @@ namespace ProjectEuler
             num *= 4;
             num *= 3;
             num *= 4;
+
+            Console.WriteLine("Checking {0}: {1}", num, IsNumDividedByAll(num));
 
         }
   

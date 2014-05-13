@@ -12,37 +12,37 @@ namespace ProjectEuler
         {
             // run individual solutions by uncommenting respective lines
             
-            //1
+            ////1
             //MultiplesOf3or5.RunSolution();
 
-            //2
+            ////2
             //EvenFibonacci.RunSolution();
 
-            //3
+            ////3
             //FactorLargePrime.RunSolution();
 
-            //4
+            ////4
             //LargestPalindromeProduct.RunSolution();
 
-            //5
+            ////5
             //SmallestMultiple.RunSolution();
 
-            //6
+            ////6
             //SumSquareDifference.RunSolution();
 
-            //7
+            ////7
             //TenThousandFirstPrime.RunSolution();
 
-            //8
+            ////8
             //LargestProductInSeries.RunSolution();
 
-            //9
+            ////9
             //SpecialPythagoreanTriplet.RunSolution();
 
-            //10
-            SummationOfPrimes.RunSolution();
+            ////10
+            //SummationOfPrimes.RunSolution();
 
-            //19
+            ////19
             //CountingSundays.RunSolution();
         }
     }

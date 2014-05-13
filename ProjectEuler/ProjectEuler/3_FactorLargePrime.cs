@@ -36,7 +36,7 @@ namespace ProjectEuler
 
         static int getFirstPrimeFactor(long bigNumber)
         {
-            foreach (var prime in Utils.Primes())
+            foreach (var prime in Utils.getNextPrime())
             {
                 if (bigNumber % prime == 0)
                 {

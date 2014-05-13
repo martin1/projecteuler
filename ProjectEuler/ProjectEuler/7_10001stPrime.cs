@@ -12,12 +12,12 @@ namespace ProjectEuler
         public static void RunSolution()
         {
             int i = 2;
-            foreach (var prime in Utils.Primes())
+            foreach (var prime in Utils.getNextPrime())
             {
-                Console.WriteLine(i + ": " + prime);
                 i++;
-                if (i > 10001)
+                if (i == 10001)
                 {
+                    Console.WriteLine(i + ": " + prime);
                     break;
                 }
             }
