@@ -11,6 +11,7 @@ namespace ProjectEuler
         static void Main(string[] args)
         {
             // run individual solutions by uncommenting respective lines
+            
             //1
             //MultiplesOf3or5.RunSolution();
 
@@ -24,10 +25,22 @@ namespace ProjectEuler
             //LargestPalindromeProduct.RunSolution();
 
             //5
-            SmallestMultiple.RunSolution();
+            //SmallestMultiple.RunSolution();
+
+            //6
+            //SumSquareDifference.RunSolution();
 
             //7
             //TenThousandFirstPrime.RunSolution();
+
+            //8
+            //LargestProductInSeries.RunSolution();
+
+            //9
+            //SpecialPythagoreanTriplet.RunSolution();
+
+            //10
+            SummationOfPrimes.RunSolution();
 
             //19
             //CountingSundays.RunSolution();

@@ -41,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10_SummationOfPrimes.cs" />
     <Compile Include="19_CountingSundays.cs" />
     <Compile Include="2_EvenFibonacci.cs" />
     <Compile Include="1_MultiplesOf3or5.cs" />
     <Compile Include="3_FactorLargePrime.cs" />
     <Compile Include="4_LargestPalindromeProduct.cs" />
     <Compile Include="5_SmallestMultiple.cs" />
+    <Compile Include="6_SumSquareDifference.cs" />
     <Compile Include="7_10001stPrime.cs" />
+    <Compile Include="8_LargestProductInSeries.cs" />
+    <Compile Include="9_SpecialPythagoreanTriplet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Utils.cs" />

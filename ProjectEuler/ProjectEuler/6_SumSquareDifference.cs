@@ -19,9 +19,20 @@ namespace ProjectEuler
 
         //Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
+        //Brute force implementation
         public static void RunSolution()
         {
-            //TODO
+            int sum = 0;
+            int sumOfSquares = 0;
+            foreach (var num in Enumerable.Range(1, 100))
+            {
+                sumOfSquares += num * num;
+                sum += num;
+            }
+            var squareOfSum = sum * sum;
+            Console.WriteLine("SquareOfSum - SumOfSquares = {0}", squareOfSum - sumOfSquares);
+
+
         }
     }
 }
