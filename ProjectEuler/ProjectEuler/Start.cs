@@ -10,49 +10,55 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            // run individual solutions by uncommenting respective lines
-            
-            ////1
-            //MultiplesOf3or5.RunSolution();
+            int solutionNumber = 13;
 
-            ////2
-            //EvenFibonacci.RunSolution();
+            switch (solutionNumber)
+	        {
+                case 1:
+                    MultiplesOf3or5.RunSolution();
+                    break;
+                case 2:
+                    EvenFibonacci.RunSolution();
+                    break;
+                case 3:
+                    FactorLargePrime.RunSolution();
+                    break;
+                case 4:
+                    LargestPalindromeProduct.RunSolution();
+                    break;
+                case 5:
+                    SmallestMultiple.RunSolution();
+                    break;
+                case 6:
+                    SumSquareDifference.RunSolution();
+                    break;
+                case 7:
+                    TenThousandFirstPrime.RunSolution();
+                    break;
+                case 8:
+                    LargestProductInSeries.RunSolution();
+                    break;
+                case 9:
+                    SpecialPythagoreanTriplet.RunSolution();
+                    break;
+                case 10:
+                    SummationOfPrimes.RunSolution();
+                    break;
+                case 11:
+                    LargestProductInAGrid.RunSolution();
+                    break;
+                case 12:
+                    HighlyDivisibleTriangularNumber.RunSolution();
+                    break;
+                case 13:
+                    LargeSum.RunSolution();
+                    break;
+                //...
+                case 19:
+                    CountingSundays.RunSolution();
+                    break;
+	        }
 
-            ////3
-            //FactorLargePrime.RunSolution();
-
-            ////4
-            //LargestPalindromeProduct.RunSolution();
-
-            ////5
-            //SmallestMultiple.RunSolution();
-
-            ////6
-            //SumSquareDifference.RunSolution();
-
-            ////7
-            //TenThousandFirstPrime.RunSolution();
-
-            ////8
-            //LargestProductInSeries.RunSolution();
-
-            ////9
-            //SpecialPythagoreanTriplet.RunSolution();
-
-            ////10
-            //SummationOfPrimes.RunSolution();
-
-            ////11
-            //LargestProductInAGrid.RunSolution();
-
-            ////12
-            //HighlyDivisibleTriangularNumber.RunSolution();
-
-            //13
-            LargeSum.RunSolution();
-
-            ////19
-            //CountingSundays.RunSolution();
         }
     }
 }

@@ -44,6 +44,7 @@
     <Compile Include="10_SummationOfPrimes.cs" />
     <Compile Include="11_LargestProductInAGrid.cs" />
     <Compile Include="12_HighlyDivisibleTriangularNumber.cs" />
+    <Compile Include="13_LargeSum.cs" />
     <Compile Include="19_CountingSundays.cs" />
     <Compile Include="2_EvenFibonacci.cs" />
     <Compile Include="1_MultiplesOf3or5.cs" />
