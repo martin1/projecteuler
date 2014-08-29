@@ -10,7 +10,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            int solutionNumber = 13;
+            int solutionNumber = 14;
 
             switch (solutionNumber)
 	        {
@@ -52,6 +52,9 @@ namespace ProjectEuler
                     break;
                 case 13:
                     LargeSum.RunSolution();
+                    break;
+                case 14:
+                    LongestCollatzSequence.RunSolution();
                     break;
                 //...
                 case 19:
