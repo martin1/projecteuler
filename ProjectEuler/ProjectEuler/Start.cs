@@ -42,6 +42,15 @@ namespace ProjectEuler
             ////10
             //SummationOfPrimes.RunSolution();
 
+            ////11
+            //LargestProductInAGrid.RunSolution();
+
+            ////12
+            //HighlyDivisibleTriangularNumber.RunSolution();
+
+            //13
+            LargeSum.RunSolution();
+
             ////19
             //CountingSundays.RunSolution();
         }
