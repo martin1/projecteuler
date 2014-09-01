@@ -25,26 +25,38 @@ namespace ProjectEuler
         public static void RunSolution()
         {
             //initial observation indicates that at most only odd numbers should be considered
+            //further testing indicates that only those odd numbers where (3*number+1) / 2 is also odd should be considered
 
-            var longestChainStart = 0;
-            var longestChaniLength = 0;
+            var longestSequenceStart = 0;
+            var longestSequenceLength = 0;
 
-            foreach (var n in Enumerable.Range(3, 999999).Where(_ => _ % 2 != 0).Reverse())
+            foreach (var n in Enumerable.Range(1, 999999).Where(i => i % 2 != 0 && ((3 * i + 1) / 2) % 2 != 0).Reverse())
             {
-                
+                //Console.WriteLine(n + "...");
+                var sequenceLength = GetCollatzSequenceLength(n);
+
+                if (sequenceLength > longestSequenceLength)
+                {
+                    longestSequenceLength = sequenceLength;
+                    longestSequenceStart = n;
+                    Console.WriteLine(n + " " + longestSequenceLength);
+                }
             }
+            Console.WriteLine(string.Format("Longest Collatz sequence length under one million is {0} and it starts with \n{1}", 
+                longestSequenceLength, longestSequenceStart));
+            Console.ReadLine();
         }
 
-        private static List<int> GetCollatzSequence(int startingNumber)
+        private static int GetCollatzSequenceLength(long startingNumber)
         {
-            var sequence = new List<int>();
+            var length = 0;
             var lastElement = startingNumber;
             while (true)
             {
-                sequence.Add(lastElement);
+
+                length++;
                 if (lastElement == 1)
                     break;
-
                 if (lastElement % 2 == 0)
                 {
                     lastElement = lastElement / 2;
@@ -54,7 +66,7 @@ namespace ProjectEuler
                     lastElement = (3 * lastElement) + 1;
                 }
             }
-            return sequence;
+            return length;
         }
     }
 }
