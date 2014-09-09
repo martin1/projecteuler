@@ -15,8 +15,11 @@ namespace ProjectEuler
 
     //How many such routes are there through a 20×20 grid?
 
-        //NOTE: incomplete solution, works only when the binary value of squareSize*2 <= Int32.MaxValue
-        const int squareSize = 5;
+        //Solution: using central binomial coefficient: (factorial 40) / (factorial 20)**2 = 137846528820
+        //As the incomplete solution gives us the number of paths for 2, 3, 4, 5 sided squares I used googled the numbers of paths
+        //which led to binomial coefficient wiki page with the formula (factorial n) / (factorial n)**2, where n >= 0.
+        //Calculated using Wolfram Alpha
+        const int squareSize = 4;
 
         public static void RunSolution()
         {
@@ -35,11 +38,8 @@ namespace ProjectEuler
                 }
             }
             Console.WriteLine("Square size: " + squareSize + "\nnumber of different paths: " + paths.Count);
-            foreach (var item in paths)
-            {
-                Console.WriteLine(item);
-            }
             Console.ReadLine();
+            Console.WriteLine("20-sided square has 137846528820 possible paths. See comments at LatticePaths class for details");
         }
 
         private static int GetMaxValue(int squareSize)
