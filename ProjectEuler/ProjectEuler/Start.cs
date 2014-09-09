@@ -10,7 +10,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            int solutionNumber = 14;
+            int solutionNumber = 15;
 
             switch (solutionNumber)
 	        {
@@ -55,6 +55,9 @@ namespace ProjectEuler
                     break;
                 case 14:
                     LongestCollatzSequence.RunSolution();
+                    break;
+                case 15:
+                    LatticePaths.RunSolution();
                     break;
                 //...
                 case 19:

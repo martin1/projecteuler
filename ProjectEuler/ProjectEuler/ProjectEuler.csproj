@@ -46,6 +46,7 @@
     <Compile Include="12_HighlyDivisibleTriangularNumber.cs" />
     <Compile Include="13_LargeSum.cs" />
     <Compile Include="14_LongestCollatzSequence.cs" />
+    <Compile Include="15_LatticePaths.cs" />
     <Compile Include="19_CountingSundays.cs" />
     <Compile Include="2_EvenFibonacci.cs" />
     <Compile Include="1_MultiplesOf3or5.cs" />
